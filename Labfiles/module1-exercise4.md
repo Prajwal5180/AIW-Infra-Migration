@@ -29,7 +29,7 @@ In this task, you will be using Azure Virtual Machine Scale Sets (VMSS) to impro
    
    ![](Images/30-09-2024(8).png)
 
-4. To create the image in a gallery, select **Yes, share it to a gallery as an image version** under **Instance details**.
+4. To create the image in a gallery, select **Yes, share it to a gallery as a image version** under **Instance details**.
 
    ![](Images/md1-ex-4-t1-s6.png)
 
@@ -39,7 +39,7 @@ In this task, you will be using Azure Virtual Machine Scale Sets (VMSS) to impro
 
 6. In the Operating system state select **Specialized**.
 
-7. On the Target VM definition click **Create new (1)** and create a VM Image definition by providing the following details and then click **Ok (6)**: 
+7. On the Target VM image definition click **Create new (1)** and create a VM Image definition by providing the following details and then click **Ok (6)**: 
   
    - Image VM definition name: **imagedefinition<inject key="DeploymentID" enableCopy="false" /> (2)**
 
@@ -55,13 +55,13 @@ In this task, you will be using Azure Virtual Machine Scale Sets (VMSS) to impro
 
 9. Select **Review + create**.
 
-10. After validation passes, select **Create** to create the image and wait for the image creation.
+10. After validation passes, select **Create** to create the image and wait for the image creation. It might take 10-15 minutes to create image. Select **Go to resource** after image creation is completed.
 
-11. On the page for the image gallery, on the upper menu, select **+ Create VMSS**.
+11. On the page for the VM image version, on the upper menu, select **+ Create VMSS**.
 
-    ![](Images/upd-vmss1.png)
+    ![](Images/new-inframigration-hol1ex4-1.png)
 
-12. Under the Basics tab, enter the **Virtual Machine name scale set** name as **migrationscaleset<inject key="DeploymentID" enableCopy="false" />**
+12. Under the Basics tab, select Resource group as **SmartHotelHostRG** and enter the **Virtual Machine name scale set** name as **migrationscaleset<inject key="DeploymentID" enableCopy="false" />**
 
     ![](Images/upd-vmname.png)
 
